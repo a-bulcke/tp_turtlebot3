@@ -1,0 +1,25 @@
+# Build / install / log ROS2
+build/
+install/
+log/
+
+# VSCode
+.vscode/*
+!.vscode/extensions.json
+*.code-workspace
+
+# Python
+*.pyc
+__pycache__/
+.mypy_cache/
+
+# C++ (colcon génère ces fichiers)
+*.o
+*.so
+*.a
+CMakeCache.txt
+CMakeFiles/
+
+# Fichiers système
+.DS_Store
+Thumbs.db

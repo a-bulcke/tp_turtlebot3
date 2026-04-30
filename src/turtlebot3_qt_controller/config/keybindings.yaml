@@ -1,0 +1,26 @@
+# config/keybindings.yaml
+# Touches de contrôle du TurtleBot3
+# Modifier ces valeurs sans recompiler !
+ 
+keybindings:
+  forward:      90    # Touche 'Z' (code Qt::Key)
+  backward:     83    # Touche 'S'
+  turn_left:    81    # Touche 'Q'
+  turn_right:   68    # Touche 'D'
+  stop:         32    # Espace
+ 
+  # Alternatives : flèches du pavé numérique
+  arrow_up:     16777235   # Qt::Key_Up
+  arrow_down:   16777237   # Qt::Key_Down
+  arrow_left:   16777234   # Qt::Key_Left
+  arrow_right:  16777236   # Qt::Key_Right
+ 
+speeds:
+  linear:   0.15   # m/s
+  angular:  1.0    # rad/s
+ 
+ros:
+  cmd_vel_topic:    "/cmd_vel"
+  camera_topic:     "/camera/image_raw/compressed"
+  battery_topic:    "/battery_state"
+  publish_rate_hz:  10
